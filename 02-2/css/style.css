@@ -1,0 +1,13 @@
+
+
+.img-big {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+.img-small {
+    width: 200px;
+    height: auto;
+    display: block;
+}
