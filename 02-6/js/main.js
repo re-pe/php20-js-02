@@ -1,8 +1,12 @@
 (() => {
-    const button = document.querySelector('button');
-    const h3 = document.querySelector('h3');
+    const buttons = document.querySelectorAll('button');
+    const img = document.querySelector('img');
     const rxTextClasses = /\btext-.+?\b/g;
-    button.addEventListener('click', (event) => {
-        h3.classList.toggle('d-none');
-    });
+    buttons.forEach(button => button.addEventListener('click', (event) => {
+        img.className = "";
+        const dataClass = event.target.getAttribute('data-class');
+        if (dataClass !== "") {
+            img.classList.add(dataClass);
+        }
+    }));
 })();
