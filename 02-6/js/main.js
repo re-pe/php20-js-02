@@ -5,7 +5,7 @@
     const cardBodyClasses = cardBody.className;
     const flexClassNames = "d-flex flex-column";
 
-    btnClickHandler = (event) => {
+    const btnClickHandler = (event) => {
         img.className = "";
         cardBody.className = cardBodyClasses;
         const dataClass = event.target.getAttribute('data-class');
